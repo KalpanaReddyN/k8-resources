@@ -8,6 +8,7 @@ spec:
     image: nginx
   - name: almalinux
     image: almalinux:9
-    command: ["sleep","1000"]
+    command: ["sleep","1000"]  #This defines the command that the AlmaLinux container will run. In this case,it will execute the sleep  
+                               # command for 1000 seconds, essentially keeping the container alive without doing anything else.
 
 
