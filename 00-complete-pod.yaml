@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: pod
+metadata:
+  name: pod-1
+  labels:
+    project: expense
+    module: backend
+    environement: dev
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  - name: almalinux
+    image: almalinux:9
+    env:
+      - name: course
+        value: DevOps
+      - name: trainer
+        value: Siva
+      - name: duration
+        value: 120hrs
+    resources:
+      requests:
+        cpu: 100m
+        memory: 68Mi
+      limits:
+        cpu: 120m
+        memory: 100Mi
