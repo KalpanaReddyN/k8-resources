@@ -6,7 +6,7 @@ spec:
   containers:
   # this below code is equivalent to docker run -d --name nginx nginx:1.14.2
   - name: nginx
-    image: nginx:1.14.2   
+    image: nginx  
     ports:
     - containerPort: 80
     
