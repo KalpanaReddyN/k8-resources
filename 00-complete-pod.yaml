@@ -4,11 +4,11 @@ metadata:
   name: pod-1
   labels:
     project: expense
+    environment: development
     module: backend
-    environement: dev
   annotations:
     imageregistry: "https://hub.docker.com/"
-    buildURL: "https://jenkins.joindevops.com/expense/backend/build/67"
+    buildURL: "here it provides links to CI/CD jobs associated with this deployment"
 spec:
   containers:
   - name: nginx
@@ -16,19 +16,14 @@ spec:
   - name: almalinux
     image: almalinux:9
     env:
-      - name: course
-        value: DevOps
-      - name: trainer
-        value: Siva
-      - name: duration
-        value: 120hrs
+    - name: APP_ENV
+      value: "production"
+    - name: APP_PORT
+      value: "8080"
     resources:
       requests:
         cpu: 100m
-        memory: 68Mi
+        memory: 68mi
       limits:
         cpu: 120m
-        memory: 100Mi
-
-
-
+        memory: 100mi
