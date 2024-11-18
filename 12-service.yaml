@@ -6,7 +6,7 @@ spec:
   selector:
     project: expense
     module: backend
-    environment: dev
+    environment: dev   # these selectors helps the service to find any Pod with these label.
   ports:
   - name: nginx-svc-port
     protocol: TCP
