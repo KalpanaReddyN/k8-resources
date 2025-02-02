@@ -37,7 +37,7 @@ kind: Pod
 metadata:
   name: nginx
 spec:
-  serviceAccountName: secret-reader
+  serviceAccountName: secret-reader   # without this it will take default service account.
   containers:
   # docker run -d --name nginx nginx
   - name: nginx
