@@ -14,12 +14,12 @@ spec:
   - name: nginx
     image: nginx
     ports:
-      containerPort: 80
+    - containerPort: 80
   - name: almalinux
     image: almalinux:9
     env:
       - name: username1
-        value: kalpananeelapu
+        value: devops
       - name: password1
         value: "Admin123"
     resources:
