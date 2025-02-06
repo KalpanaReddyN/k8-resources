@@ -7,8 +7,8 @@ metadata:
     project: expense
     environment: development
   annotations:
-    imageregistry: "specify the location of the registry where containers stores images"
-    buildURL: "specify the ci/cd job link for the deployment"
+    imageregistry: "https://hub.docker.com/"
+    buildURL: "https://jenkins.joindevops.com/expense/backend/build/67"
 spec:
   containers:
   - name: nginx
