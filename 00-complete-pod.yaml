@@ -1,29 +1,27 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: app-2
+  name: application-1
   labels:
     module: backend
     project: expense
     environment: development
   annotations:
-    imageregistry: "Specifies the location of the registry where container images are stored"
-    buildURL: "Specifies the link to the CI/CD job associated with the deployment"
+    imageregistry: "specify the location of the registry where containers stores images"
+    buildURL: "specify the ci/cd job link for the deployment"
 spec:
   containers:
   - name: nginx
     image: nginx
     ports:
-    - containerPort: 80
+      containerPort: 80
   - name: almalinux
     image: almalinux:9
-    ports:
-    - containerPort: 8080
     env:
-      - name: usernmae
+      - name: username1
         value: kalpananeelapu
-      - name: password
-        value: "admin123"
+      - name: password1
+        value: "Admin123"
     resources:
       requests:
         cpu: 100m
@@ -31,7 +29,4 @@ spec:
       limits:
         cpu: 120m
         memory: 100Mi
-
-
-
-      
+    
