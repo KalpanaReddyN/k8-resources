@@ -1,4 +1,4 @@
-apiVersion: app/v1
+apiVersion: v2
 kind: Pod
 metadata:
   name: nginx             # nginx is the pod name, which is how it will be referenced within the cluster.
