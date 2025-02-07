@@ -1,4 +1,4 @@
-apiVersion: v2
+apiVersion: v1
 kind: Pod
 metadata:
   name: nginx             # nginx is the pod name, which is how it will be referenced within the cluster.
@@ -6,7 +6,7 @@ spec:
   containers:
   # this below code is equivalent to docker run -d --name nginx nginx:1.14.2
   - name: nginx
-    image: nginx  
+    image: nginx:1.14.2  
     ports:
     - containerPort: 80
     
