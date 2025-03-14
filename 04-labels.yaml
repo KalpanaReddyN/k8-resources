@@ -8,5 +8,5 @@ metadata:
     environment: dev
 spec:
   containers:
-  - name: kalpana
+  - name: nginx
     image: nginx 
